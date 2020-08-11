@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "903401536928",
+    "firebase_url": "https://blr-brothers.firebaseio.com",
+    "project_id": "blr-brothers",
+    "storage_bucket": "blr-brothers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903401536928:android:e62730fbf5e8779da2f8c5",
+        "android_client_info": {
+          "package_name": "com.blrbrothers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903401536928-r4tfsap0c65qeaoioaub714ctdaqnp2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb4Keq2Z02dWixyM-yFW56eiF95cOpbjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903401536928-r4tfsap0c65qeaoioaub714ctdaqnp2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

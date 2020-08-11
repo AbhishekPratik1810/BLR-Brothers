@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Amb_WT_VRFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RL_AWTVR_Header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_AWTVR_Back_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/tv_AWTVR_Header"
+                style="@style/LargeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/iv_AWTVR_Back_Button"
+                android:text="Ambulance"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_AWTVR_Banner"
+            android:layout_below="@+id/RL_AWTVR_Header"
+            android:layout_width="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="200dp"
+            android:src="@drawable/blr_awtr"/>
+
+        <ImageView
+            android:id="@+id/iv_AWTVR_Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@id/iv_AWTVR_Banner"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ic_amb_banner"/>
+
+        <TextView
+            android:id="@+id/tv_AWTVR_Title"
+            android:text="BLR Brothers Ambulances"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/LargeTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_AWTVR_Banner"/>
+
+        <TextView
+            android:id="@+id/tv_AWTVR_Body"
+            android:text="మన మిర్యాలగుడ పట్టన ప్రజలకు BLR బ్రదర్స్ ఉచిత అంబులెన్సు సౌకర్యం కలిపిస్తునారు. ఈ భూమి మీద అన్నిటికన్నా ముఖ్యమైనది మన ప్రాణం, అంబులెన్సు సర్వీస్ ఉపయోగిదం ఆ ప్రాణాన్ని కాపాడుకుందాం. అత్యవసర సమయంలో  అంబులెన్సు ని బుక్ చేసుకొనుటకు క్రింద వున్నా కాల్ బటన్ ను ప్రెస్ చేసి కాల్ చేయండి మరియు మా అంబులెన్సు డ్రైవర్ కు మీ అడ్రస్ వివరాలు తెలపండి."
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/tv_AWTVR_Title"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/MediumTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_AWTVR_call"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL NOW"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:drawableStart="@drawable/ic_call_white"
+            android:background="@drawable/button_background"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

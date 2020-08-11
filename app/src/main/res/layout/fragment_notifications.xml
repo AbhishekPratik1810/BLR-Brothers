@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_Notif_Back_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/LargeTextViewStyle"
+            android:layout_toEndOf="@+id/iv_Notif_Back_Button"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="Notifications"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_Notification"
+        android:src="@drawable/bell"/>
+    <TextView
+        android:id="@+id/tv_Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/MediumTextViewStyle"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="No New notifications at this moment" />
+    </RelativeLayout>
+</FrameLayout>

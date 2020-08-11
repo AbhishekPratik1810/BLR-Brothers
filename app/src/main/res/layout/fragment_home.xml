@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_Home_Banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home_banner" />
+
+        <TextView
+            android:id="@+id/tv_Home_HelpingHand"
+            android:text="Helping Hand"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            style="@style/ExtraLargeTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_Home_Banner"
+            android:layout_marginStart="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/RL_Home_First"
+            android:layout_below="@+id/tv_Home_HelpingHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_Home_Ambulance"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_amb"/>
+
+            <TextView
+                android:id="@+id/tv_Home_Amb"
+                android:layout_below="@+id/iv_Home_Ambulance"
+                android:layout_marginTop="5dp"
+                android:text=" అంబులెన్సు\nAmbulance"
+                android:layout_alignStart="@+id/iv_Home_Ambulance"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_Home_WaterTank"
+                android:layout_toEndOf="@id/iv_Home_Ambulance"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/ic_wt"/>
+            <TextView
+                android:layout_below="@+id/iv_Home_WaterTank"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@+id/iv_Home_WaterTank"
+                android:gravity="center"
+                android:text="వాటర్ ట్యాంక్\nWater Tank"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_Home_VaikuntaRath"
+                android:layout_toEndOf="@id/iv_Home_WaterTank"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/ic_vr"/>
+            <TextView
+                android:layout_below="@+id/iv_Home_WaterTank"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@+id/iv_Home_VaikuntaRath"
+                android:layout_alignEnd="@+id/iv_Home_VaikuntaRath"
+                android:text="వైకుంఠ రథం\nVaikunta Ratham"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_Home_Second"
+            android:layout_below="@+id/RL_Home_First"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_Home_Events"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_ev"/>
+            <TextView
+                android:id="@+id/tv_Home_Events"
+                android:layout_below="@+id/iv_Home_Events"
+                android:layout_marginTop="5dp"
+                android:text="ఈవెంట్స్\nEvents"
+                android:layout_alignStart="@+id/iv_Home_Events"
+                android:layout_alignEnd="@+id/iv_Home_Events"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_Home_News"
+                android:layout_toEndOf="@id/iv_Home_Events"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/ic_news"/>
+            <TextView
+                android:layout_below="@+id/iv_Home_News"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@+id/iv_Home_News"
+                android:layout_alignEnd="@id/iv_Home_News"
+                android:gravity="center"
+                android:text="న్యూస్\nNews"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_Home_Video"
+                android:layout_toEndOf="@id/iv_Home_News"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/ic_video"/>
+            <TextView
+                android:layout_below="@+id/iv_Home_Video"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@+id/iv_Home_Video"
+                android:layout_alignEnd="@+id/iv_Home_Video"
+                android:text="వీడియోస్\nVideo"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
