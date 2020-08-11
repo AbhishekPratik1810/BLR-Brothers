@@ -48,10 +48,11 @@ public class Amb_WT_VRFragment extends Fragment {
             params.topMargin= (int) (138*d);
             header.setText("Water Tank");
             title.setText("BLR Brothers Water Tank");
-            String bodyText = "వేసవి కాలం మన మిర్యాలగూడ పట్టన ప్రజలు  నీరు లేక ఇబ్బంది పడకూడదు అని మన BLR బ్రదర్స్ ఉచిత వాటర్ టాంకర్ సౌకర్యం కలిపిస్తునారు. మీ ఏరియా లో నీటి  ఇబ్బంది ఉన్నట్లు అయితే వెంటనే  క్రింద వున్నా కాల్ బటన్ ను ప్రెస్ చేసి కాల్ చేయండి మరియు మా వాటర్ టాంకర్ డ్రైవర్ కు మీ అడ్రస్ వివరాలు తెలపండి.";
+            String bodyText = "వేసవి కాలం మన మిర్యాలగూడ పట్టన ప్రజలు  నీరు లేక ఇబ్బంది పడకూడదు అని మన BLR బ్రదర్స్ ఉచిత వాటర్ టాంకర్ సౌకర్యం కలిపిస్తునారు. మీ ఏరియా లో నీటి  ఇబ్బంది ఉన్నట్లు అయితే వెంటనే  మీ వార్డ్ ఇంచార్జి లేదా కౌన్సిలర్ ని సంప్రదించండి";
             body.setText(bodyText);
             banner.setImageResource(R.drawable.ic_wt_banner);
             banner.setLayoutParams(params);
+            call.setVisibility(View.GONE);
         }else if (count ==2){
             params.topMargin= (int)(140*d);
             header.setText("Vaikunta Ratham");
@@ -61,8 +62,9 @@ public class Amb_WT_VRFragment extends Fragment {
             body.setText(bodyText);
             banner.setImageResource(R.drawable.ic_vr_banner);
             banner.setLayoutParams(params);
-
-        }
+            call.setVisibility(View.VISIBLE);
+        }else
+            call.setVisibility(View.VISIBLE);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +76,10 @@ public class Amb_WT_VRFragment extends Fragment {
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                call("+91 99999 88888");
+                if(count==2)
+                    call("+91 82828 26666");
+                else
+                    call("+91 82828 27777");
             }
         });
         return view;

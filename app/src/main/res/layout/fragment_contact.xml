@@ -53,19 +53,22 @@
                 android:layout_gravity="center"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
                 android:layout_below="@+id/iv_Contact_Banner">
 
                 <ImageView
                     android:id="@+id/iv_Contact_Location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:layout_alignTop="@id/tv_Contact_Location"
                     android:layout_alignBottom="@id/tv_Contact_Location"
                     android:gravity="center"
                     android:src="@drawable/ic_location" />
                 <TextView
                     android:id="@+id/tv_Contact_Location"
-                    android:text="Madhapur,Hyderabad,Telangana"
+                    android:text="Manasa Sai Apartment
+Miryalaguda, Housing Board Colony, Miryalaguda, Telangana 508207"
                     android:layout_toEndOf="@id/iv_Contact_Location"
                     android:layout_marginStart="20dp"
                     android:textColor="@color/colorPrimary"
@@ -104,6 +107,7 @@
                     android:layout_alignTop="@id/tv_Contact_Mail"
                     android:layout_alignBottom="@id/tv_Contact_Mail"
                     android:gravity="center"
+                    android:layout_marginStart="20dp"
                     android:src="@drawable/ic_mail" />
                 <TextView
                     android:id="@+id/tv_Contact_Mail"
@@ -125,6 +129,7 @@
                     android:layout_alignTop="@id/tv_Contact_Website"
                     android:layout_alignBottom="@id/tv_Contact_Website"
                     android:gravity="center"
+                    android:layout_marginStart="20dp"
                     android:src="@drawable/ic_website" />
                 <TextView
                     android:id="@+id/tv_Contact_Website"

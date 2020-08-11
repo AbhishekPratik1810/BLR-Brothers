@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.action_share:
                         Intent sendIntent = new Intent();
                         sendIntent.setAction(Intent.ACTION_SEND);
-                        sendIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out BLR Brother's App");
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, "BLR Brothers మొబైల్ యాప్ - మా యాప్ ద్వారా ఉచిత అంబులెన్సు, వాటర్ ట్యాంక్ మరియు వైకుంఠ రథం సర్వీసులు పొందవచ్చు. మేము జరిపే కారిక్రమాలు, వాటి వివరాలు మా యాప్ ద్వారా సులభంగా తెలుసుకోవచ్చు. మా యాప్ ని డౌన్లోడ్ చేసుకునేందుకు ఈ లింకును ప్రెస్ చెయ్యండి  https://bit.ly/BlrBrothers");
                         sendIntent.setType("text/plain");
                         startActivityForResult(sendIntent,1805);
                         break;
